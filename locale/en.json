@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Bulk actions",
+    "description": "Multi-select sidebar tasks: batch archive, permanent session delete, plus a Delete action in the task context menu."
+  }
+}

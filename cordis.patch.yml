@@ -1,0 +1,13 @@
+# dsh-bulk-actions —— 任务多选 / 批量归档 / 批量删除
+#
+# Host 半只提供一个同源路由，负责把会话日志从磁盘删除、修剪 workspace 记账，
+# 并广播 api-session/removed 让侧栏行立刻消失。
+#
+# 可调参数（改这里，无需改代码）：
+#   home       DSH 家目录（默认 $DSH_HOME，再退回 ~/.dsh）
+#   maxBatch   单次批量删除的会话数上限（默认 200）
+- insert:
+    - id: dsh-bulk-actions
+      name: '@local/dsh-bulk-actions'
+      config:
+        maxBatch: 200
